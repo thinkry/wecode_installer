@@ -2,8 +2,8 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "WeCode"
-!define PRODUCT_VERSION "1.1.8"
-!define PRODUCT_WEB_SITE "http://thinkry.github.io/wecode"
+!define PRODUCT_VERSION "1.1.9"
+!define PRODUCT_WEB_SITE "http://thinkry.github.io"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\WeCode.exe"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
@@ -39,7 +39,7 @@
 RequestExecutionLevel admin #NOTE: You still need to check user rights with UserInfo!
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "wecode1.1.8.exe"
+OutFile "wecode1.1.9.exe"
 InstallDir "$PROGRAMFILES\WeCode"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
@@ -47,17 +47,17 @@ ShowUnInstDetails show
 BrandingText "WeCode程序员云笔记"
 
 ; ------ Exe 文件添加版本信息（这个放到 MUI_LANGUAGE后面，否则中文是乱码） ------
-VIProductVersion "1.1.8.0"
+VIProductVersion "1.1.9.0"
 ;产品名称
 VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductName" "WeCode程序员云笔记-安装程序"
 ;产品版本
-VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "1.1.8"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "1.1.9"
 ;版权
-VIAddVersionKey /LANG=${LANG_SimpChinese} "LegalCopyright" "Copyright (c) 2015"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "LegalCopyright" "Copyright (c) 2015-2017"
 ;描述
 VIAddVersionKey /LANG=${LANG_SimpChinese} "FileDescription" "WeCode程序员云笔记-安装程序"
 ;文件版本号
-VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "1.1.8.0"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "1.1.9.0"
 ; ------ Exe 文件添加版本信息 结束 ------
 
 Section -.NET
